@@ -8,7 +8,7 @@ import styled from 'react-emotion';
 // this is a different string THIS IS A STRING
 
 // ` denotes tagged template literal
-const Wrapper = styled("div")`
+const Wrapper = styled('div')`
 	width: 32%;
 	border: 2px solid #333;
 	border-radius: 4px;

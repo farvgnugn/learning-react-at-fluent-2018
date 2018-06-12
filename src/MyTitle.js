@@ -22,7 +22,7 @@ class MyTitle extends React.Component {
 			fontWeight: newFontWeight
 		});
 	}
-	
+
 	render() {
 		return (
 			<div>
