@@ -10,7 +10,7 @@ import styled from 'react-emotion';
 // ` denotes tagged template literal
 const Wrapper = styled('div')`
 	width: 32%;
-	border: 2px solid #333;
+	border: 2px solid ${props => (props.isGreen ? "limegreen" : "#333")};
 	border-radius: 4px;
 	margin-bottom: 25px;
 	padding-right: 10px;
@@ -21,7 +21,7 @@ const Wrapper = styled('div')`
 //const x = someTaggedTemplateLiteralName`have some string in here ${someExpressionHere()}`;
 
 const ShowCard = props => (
-	<Wrapper>
+	<Wrapper isGreen={props.isOdd}>
 		<img
 			alt={`${props.title} show poster`}
 			src="http://placecorgi.com/400/400"
