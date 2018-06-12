@@ -1,5 +1,5 @@
 import React from 'react';
-import { string } from 'prop-types';
+import { string, bool } from 'prop-types';
 import styled from 'react-emotion';
 
 //const x = 'this is a string'
@@ -10,7 +10,7 @@ import styled from 'react-emotion';
 // ` denotes tagged template literal
 const Wrapper = styled('div')`
 	width: 32%;
-	border: 2px solid ${props => (props.isGreen ? "limegreen" : "#333")};
+	border: 2px solid ${props => (props.isGreen ? 'limegreen' : '#333')};
 	border-radius: 4px;
 	margin-bottom: 25px;
 	padding-right: 10px;
@@ -36,7 +36,8 @@ const ShowCard = props => (
 ShowCard.propTypes = {
 	title: string.isRequired,
 	year: string.isRequired,
-	description: string.isRequired
+	description: string.isRequired,
+	isOdd: bool.isRequired
 };
 
 export default ShowCard;
