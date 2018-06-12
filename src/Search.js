@@ -7,12 +7,12 @@ import ShowCard from './ShowCard';
 const Search = () => (
 	<div className="search">
 		<div>
-			{preload.shows.map(tvShow => (
+			{preload.shows.map(({ imdbID, title, year, description }) => (
 				<ShowCard
-					key={tvShow.imdbID}
-					title={tvShow.title}
-					year={tvShow.year}
-					description={tvShow.description}
+					key={imdbID}
+					title={title}
+					year={year}
+					description={description}
 				/>
 			))}
 		</div>

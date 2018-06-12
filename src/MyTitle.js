@@ -1,7 +1,11 @@
 import React from 'react';
-//import PropTypes from 'prop-types';
+import { string } from 'prop-types';
 
 class MyTitle extends React.Component {
+	propTypes = {
+		color: string.isRequired,
+		title: string.isRequired
+	};
 	constructor(props) {
 		super(props);
 
@@ -18,7 +22,7 @@ class MyTitle extends React.Component {
 			fontWeight: newFontWeight
 		});
 	}
-
+	
 	render() {
 		return (
 			<div>
